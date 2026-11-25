@@ -12,6 +12,12 @@ dissertation (University of East London).
 - CloudWatch alarm (CPU above 70% for 300 seconds) that sends an email through Amazon SNS
 - IAM and security groups for access control
 
+## Architecture
+
+![Architecture diagram](images/architecture.png)
+
+Users reach WordPress on EC2 through an Elastic IP. WordPress talks to an RDS MySQL database in a private subnet. Files are backed up to S3, and a CloudWatch alarm sends email alerts through SNS.
+
 ## Tests and results
 | Test | What I did | Result |
 |------|------------|--------|
