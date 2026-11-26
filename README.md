@@ -50,3 +50,8 @@ not in use, so this is not a production monthly cost.
 - Infrastructure as Code (Terraform or CloudFormation) to rebuild the environment
 - Scripted update of the restored RDS endpoint
 - A Pilot Light comparison under the same tests
+
+##Author
+
+Shristi Rai, MSc Cloud Computing graduate, London
+[LinkedIn] https://www.linkedin.com/in/shristee
