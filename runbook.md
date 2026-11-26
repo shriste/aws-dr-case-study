@@ -2,7 +2,6 @@
 
 How to recover the WordPress site in this project. It follows the recovery steps I tested in my dissertation. Times are what I observed in my test runs, not guarantees.
 
-No passwords, keys or other secrets belong in this file.
 
 ## Before you start
 
