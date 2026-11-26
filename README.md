@@ -1,4 +1,4 @@
-#aws-dr-case-study
+# aws-dr-case-study
 
 Disaster recovery for a small WordPress site on AWS, using the Backup and
 Restore strategy. This is the practical part of my MSc Cloud Computing
