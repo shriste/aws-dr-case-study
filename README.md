@@ -51,7 +51,7 @@ not in use, so this is not a production monthly cost.
 - Scripted update of the restored RDS endpoint
 - A Pilot Light comparison under the same tests
 
-##Author
+## Author
 
 Shristi Rai, MSc Cloud Computing graduate, London
-[LinkedIn] https://www.linkedin.com/in/shristee
+[LinkedIn](https://www.linkedin.com/in/shristee)
