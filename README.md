@@ -30,6 +30,12 @@ Users reach WordPress on EC2 through an Elastic IP. WordPress talks to an RDS My
 Times are observed values from a small number of runs with manually recorded
 timestamps. They are not AWS guarantees.
 
+## RTO and RPO
+
+- **RTO (recovery time objective):** how long the service can be down. I used an indicative target of 15 minutes. One test recovered in about 10 minutes of active work, but the full EC2 and RDS recovery took about 21 minutes, about 6 minutes over the target.
+- **RPO (recovery point objective):** how much data can be lost, measured in time. In the snapshot test, a post created after the snapshot was gone after the restore, and the older post was still there. So recovery is only as recent as the last snapshot.
+- My snapshots were manual, so I do not claim a guaranteed RPO. A one-hour RPO would need snapshots at least every hour.
+
 ## What I learned
 - The full recovery (about 21 min) missed my proposal's 15-minute target by about 6 minutes
 - A database showing "Available" does not mean the site works: WordPress had to be pointed at the new RDS endpoint, EC2 had to be healthy, security groups checked, and the web service restarted
